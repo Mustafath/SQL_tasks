@@ -30,4 +30,4 @@ ORDER BY
 	t.Name ---Sort by track name
 
 
---- P.S. Ссылка на саму базу данных в README файле.
+--- P.S. Файл самой базы данных в файле sTunes.db этого репозитория
