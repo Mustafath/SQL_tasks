@@ -7,13 +7,13 @@ EmployeeId  |  FullName  |  Age	BirthDate  |  CelebrationDate  |  Work experienc
 */
 
 SELECT 
-	EmployeeId, 	--- Worker's id 
-	FirstName || " " || LastName AS "FullName", 	--- Fullname of worker
+	EmployeeId,
+	FirstName || " " || LastName AS "FullName", 
 	STRFTIME("%Y-%m-%d", "now") - DATE(BirthDate) AS "Age",	
-	DATE(BirthDate) AS "BirthDate", 	--- Real birtday of worker
+	DATE(BirthDate) AS "BirthDate", 
 	STRFTIME("%Y", "now") || "-" || SUBSTR(STRFTIME("%d-%m-%Y", BirthDate, "start of month"), 1, 5)
-		AS "CelebrationDate",	--- Celebration date (first day of month)
-	STRFTIME("%Y-%m-%d", "now") - DATE(HireDate) AS "Years in the Company" ---Work experience (years)
+		AS "CelebrationDate",	
+	STRFTIME("%Y-%m-%d", "now") - DATE(HireDate) AS "Years in the Company" 
 		
 FROM	
 	employees
