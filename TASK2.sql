@@ -1,10 +1,9 @@
 --- Задача с книги "SQL: Быстрое погружение" (SQLite)
 
-
-
 /* Table with information about workers with format:
-EmployeeId  |  FullName  |  Age	BirthDate  |  CelebrationDate  |  Work experience		
+EmployeeId  |  FullName  |  Age  |	BirthDate  |  CelebrationDate  |  Work experience		
 */
+
 
 SELECT 
 	EmployeeId,
