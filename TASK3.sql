@@ -54,7 +54,3 @@ WHERE
     )
 ORDER BY
     book.title
-
-
-
---- P.S. Сама база данных в файле sTunes.db этого репозитория
